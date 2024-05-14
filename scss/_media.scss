@@ -1,0 +1,127 @@
+
+
+@media screen and (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+        .logosfooter {
+            margin-left: 0; 
+            margin-top: 10px; 
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .containerNosotras{
+        margin-top: 10%;
+        justify-content: space-evenly;
+        flex-direction: column;   
+    }
+    .instagram{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+  }
+  @media (max-width: 480px) {
+    .containerNosotras{
+        margin-top: 10%;
+        justify-content: space-evenly;
+        flex-direction: column;   
+    }
+    .hsobre{
+        font-size: 1rem;
+    }
+    .textnos{
+        font-size: 1rem;
+    }
+    .instagram{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+  }
+
+  @media (max-width: 680px) {
+    .mainturnos .card {
+        width: 100%;
+        margin: 3%; 
+        padding: 100px;
+    }
+    .txtturnos{
+        margin-top: 10%;
+    }
+}
+@media (max-width: 320px) {
+    .mainturnos .card {
+        width: 100%;
+        margin: 3%; 
+        padding: 20%;
+    }
+    .txtturnos{
+        margin-top: 15%;
+    }
+}
+@media (max-width: 1024px) {
+    .maincontacto{
+        margin-top: 10%;
+    }
+}
+@media (max-width: 600px) {
+    .maincontacto{
+        margin-top: 18%;
+    }
+}
+@media (max-width: 320px) {
+    .maincontacto{
+        margin-top: 23%;
+    }
+}
+@media (max-width: 768px) {
+    .mainUbi{
+        padding: 15%;
+        width: 100%;
+        align-items: center;
+        margin-top:10%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "ubi1"
+        "ubi2"
+        "ubi3";
+    }
+    .ubi2{
+        padding-left: 15%;
+    padding-right: 15%;
+    }
+ }
+  @media (max-width: 480px) {
+    .mainUbi{
+        justify-content: center;
+        margin: 30px;
+        width: 100%;
+        align-items: center;
+        margin-top:10%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 1fr 0.5fr;
+        grid-template-areas: 
+        "ubi1"
+        "ubi2"
+        "ubi3";
+    }
+    .ubi1{
+        margin: 10%;
+        padding: 5%;
+    }
+    .ubi2{
+        padding: 5%;
+    }
+    .ubi3{
+        justify-self: center;
+        align-self: start;
+    }
+  }
+
+  
+
+

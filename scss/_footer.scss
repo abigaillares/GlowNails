@@ -1,0 +1,22 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #000000;
+    color: #eee7e7;
+    .textofooter{
+        color: antiquewhite;
+        margin: 0;
+    }
+    .iconfooter{
+        margin-right: 4%;
+        .logosfooter{
+            margin: 20px;
+            padding: 10px;
+            width: 50px;
+            margin-left: 20px;
+        }
+    }
+}

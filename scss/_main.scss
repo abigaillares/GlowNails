@@ -1,0 +1,126 @@
+
+.mainNosotras{
+    width: 100vw;
+    .containerNosotras{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(233, 233, 233);
+        width: 100%;
+        .nosText{
+            margin: 30px;
+            text-align: center;
+            width: 40vw;
+            .hsobre{
+                font-size: 2rem;
+                margin: 30px;   
+            }
+            .textnos{
+                width: 40vw;
+            }
+        }
+    }
+    .imgnos{
+        width: 200px;
+        height: 300px;
+        margin: 50px;  
+        border-radius: 100%; 
+    }
+    .containerPelu{  
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        width: 100vw;
+        height: 500px;
+        .pelu{
+            height: 440px;
+            background-image: url("../imagenes/fondonosotras.JPEG");
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+            align-content: center;
+            .pelutext{
+                color: #f5f2f2;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+            }
+            .textopelu{
+                margin: 30px;
+                font-optical-sizing: auto;
+                font-weight: weight;
+                font-style: normal;
+                color: #f5f2f2;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); 
+              }
+        }
+    }
+    .instagram{
+        background-color: #dacbb1;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;  
+    }
+}
+
+.mainturnos{
+    margin-top: 6%;
+    background-color:  rgb(216, 216, 216);
+    .txtturnos {
+        text-align: center; 
+        h2{
+            margin: 0 auto; 
+            margin-bottom: 10px;
+        }
+        p{
+            margin: 0 auto; 
+            margin-bottom: 10px;
+        }
+    }
+    .card {
+        margin-right: 10px; 
+    }
+}
+
+.maincontacto{
+    background-color: rgb(223, 214, 199) ;
+    margin-top: 5.5%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .divContacto{
+        width: 85vw;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    form {
+        background-color:  rgb(216, 216, 216);
+        margin-top: 35px; 
+        width: 85vw;
+    }
+ 
+}
+.mainUbi{
+    background-color: rgb(216, 216, 216);
+    margin-top: 5.5%;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2.5fr 2.5fr;
+    grid-template-areas: 
+    "ubi1 ubi2"
+    "ubi1 ubi3";
+    .ubi1{
+        justify-self: center;
+        grid-area: ubi1;
+        margin-left: 2%;
+        height: 100%;
+    }
+    .ubi2{
+        grid-area: ubi2;
+        align-self: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    .ubi3{
+        grid-area: ubi3;
+        align-self: center;
+    }
+}

@@ -10,20 +10,48 @@
         height: 90vh;
         padding-top: 15%;
         text-align: center;
-        background-color: rgb(233, 233, 233);
+        background-color: #e9e9e9;
         h1{
             font-size: 6rem;
+            animation-name: titulo;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+
+            @keyframes titulo{
+                0%{
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 1;
+                }
+            }
         }
         p{
             font-size: 2rem;
+            animation-name: parrafo;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+
+            @keyframes parrafo{
+                0%{
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 1;
+                }
+            }
         }
     }
+    section{
+        padding: 9px;
+
+    
     .content-section {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        background-color: #f5f2f2;
+        background-color: #e9e9e9;
         p{
             width: 50%;
             padding: 20px;
@@ -33,6 +61,17 @@
             width: 50%;
             height: auto;
         }
+    }
+    }
+    .div-title{
+        margin: 3%;
+       
+    }
+    .carousel{
+        margin: 10px;
+        padding: 3%;
+        width: 70%;
+        height: 40%;
     }
     .textoinicio{
         width: 100%;
@@ -48,9 +87,9 @@
         }
         
        
+    
+
     }
-
-
 
 
 }

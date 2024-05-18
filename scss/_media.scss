@@ -1,127 +1,178 @@
+@media screen and (min-width: 320px) and (max-width: 700px) {
+    .maininicio{
+        .welcome-section{
+            margin-bottom: 0;
+            
+                h1{
+                    padding-top: 30%;
+                    font-size: 4.5rem;
+                }
+                p{
+                    font-size: 1.5rem;
+                }
+        }
+        section{
 
-
-@media screen and (max-width: 768px) {
-    footer {
+        
+        .content-section{
+            p{
+                font-size: 1rem;
+            }   
+        }
+    }
+    .div-title{
+        margin: 3%;
+        h2{
+            font-size: 1.5rem;
+        }
+       
+    }
+    .carousel{
+        margin: 10px;
+        padding: 1%;
+        width: 90%;
+        
+    }
+        .textoinicio{
+            height: 150px;
+            p{
+                font-size: 0.9rem;
+                font-weight: 500;
+            }
+        }
+    }
+    footer{
         flex-direction: column;
-        align-items: flex-start;
-        .logosfooter {
-            margin-left: 0; 
-            margin-top: 10px; 
+        padding: 9%;
+        p{
+            padding: 5%;
+        }
+        
+        
+    }
+
+    
+}
+
+@media screen and (min-width: 320px) and (max-width: 700px){
+    .mainNosotras{
+        section{
+
+        
+        .containerNosotras{
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+            .nosText{
+
+                .hsobre{
+                    padding-top: 13%;
+                    font-size: 1.4rem;
+                }
+                .textnos{
+                    width: 70vw;
+                    
+                    
+                    
+                }
+            }
+        }
+        }
+        section{
+
+        
+        .containerPelu{
+            .pelu{
+                .pelutext{
+                    padding: 5%;
+                }
+            }
+        }
+        }
+        .instagram{
+            flex-direction: column;
         }
     }
 }
 
-@media (max-width: 768px) {
-    .containerNosotras{
-        margin-top: 10%;
-        justify-content: space-evenly;
-        flex-direction: column;   
+@media screen and (min-width: 320px) and (max-width: 700px){
+    .mainturnos{
+        .txtturnos{
+            .titleturnos{
+                padding-top: 15%;
+                letter-spacing:2px;
+            }
+            p{
+                padding: 15px;
+                font-size: 1.2rem;
+            }
+        }
+        .row{
+            margin: 10px 10px 0px;
+            .card{
+                margin-bottom: 15px;
+                padding-bottom: 10px;
+            }
+        }
     }
-    .instagram{
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
-    }
-  }
-  @media (max-width: 480px) {
-    .containerNosotras{
-        margin-top: 10%;
-        justify-content: space-evenly;
-        flex-direction: column;   
-    }
-    .hsobre{
-        font-size: 1rem;
-    }
-    .textnos{
-        font-size: 1rem;
-    }
-    .instagram{
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
-    }
-  }
+}
 
-  @media (max-width: 680px) {
-    .mainturnos .card {
-        width: 100%;
-        margin: 3%; 
-        padding: 100px;
-    }
-    .txtturnos{
-        margin-top: 10%;
-    }
-}
-@media (max-width: 320px) {
-    .mainturnos .card {
-        width: 100%;
-        margin: 3%; 
-        padding: 20%;
-    }
-    .txtturnos{
-        margin-top: 15%;
-    }
-}
-@media (max-width: 1024px) {
+@media screen and (min-width: 320px) and (max-width: 700px){
     .maincontacto{
-        margin-top: 10%;
+        .divContacto{
+            padding-top: 15%;
+            h1{
+                font-size: 2rem;
+            }
+            p{
+                font-size: 1.2rem;
+            }
+        }
+        
     }
+
 }
-@media (max-width: 600px) {
-    .maincontacto{
-        margin-top: 18%;
-    }
-}
-@media (max-width: 320px) {
-    .maincontacto{
-        margin-top: 23%;
-    }
-}
-@media (max-width: 768px) {
+
+@media screen and (min-width: 320px) and (max-width: 700px){
     .mainUbi{
-        padding: 15%;
-        width: 100%;
-        align-items: center;
-        margin-top:10%;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+
+        grid-template-columns: 1fr ;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr;
         grid-template-areas: 
-        "ubi1"
         "ubi2"
-        "ubi3";
-    }
-    .ubi2{
-        padding-left: 15%;
-    padding-right: 15%;
-    }
- }
-  @media (max-width: 480px) {
-    .mainUbi{
-        justify-content: center;
-        margin: 30px;
-        width: 100%;
-        align-items: center;
-        margin-top:10%;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 1fr 0.5fr;
-        grid-template-areas: 
         "ubi1"
-        "ubi2"
         "ubi3";
+        .ubi1{
+            height: 90%;
+            justify-content: center;
+            
+            .mapa1{
+                height: 95%;
+                padding: 15px;
+                width: 100%;
+                justify-items: center;
+                
+            }
+            
+        }
+        section{
+        .ubi2{
+            margin-top: 15%;
+            padding: 10px;
+            grid-area: ubi2;
+            align-self: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3)
+            
+        }
+       }
+        .ubi3{
+            justify-content: center;
+            .mapa2{
+                width: 100%;
+                height: 100%;
+                padding:15px;
+            }
+        }
+        
     }
-    .ubi1{
-        margin: 10%;
-        padding: 5%;
-    }
-    .ubi2{
-        padding: 5%;
-    }
-    .ubi3{
-        justify-self: center;
-        align-self: start;
-    }
-  }
-
-  
-
-
+}

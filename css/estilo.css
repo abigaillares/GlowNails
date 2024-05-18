@@ -1,6 +1,9 @@
 body h1 {
   font-family: "Cinzel", serif;
 }
+body h2 {
+  font-family: "Cinzel", serif;
+}
 body p {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-optical-sizing: auto;
@@ -25,51 +28,51 @@ body .whatsapp-btn {
 .mainNosotras {
   width: 100vw;
 }
-.mainNosotras .containerNosotras {
+.mainNosotras section .containerNosotras {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: rgb(233, 233, 233);
   width: 100%;
 }
-.mainNosotras .containerNosotras .nosText {
+.mainNosotras section .containerNosotras .nosText {
   margin: 30px;
   text-align: center;
-  width: 40vw;
 }
-.mainNosotras .containerNosotras .nosText .hsobre {
+.mainNosotras section .containerNosotras .nosText .hsobre {
   font-size: 2rem;
   margin: 30px;
 }
-.mainNosotras .containerNosotras .nosText .textnos {
+.mainNosotras section .containerNosotras .nosText .textnos {
   width: 40vw;
 }
-.mainNosotras .imgnos {
+.mainNosotras section .imgnos {
   width: 200px;
   height: 300px;
   margin: 50px;
   border-radius: 100%;
+  padding-top: 8%;
 }
-.mainNosotras .containerPelu {
+.mainNosotras section .containerPelu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100vw;
   height: 500px;
 }
-.mainNosotras .containerPelu .pelu {
+.mainNosotras section .containerPelu .pelu {
   height: 440px;
-  background-image: url("../imagenes/fondonosotras.JPEG");
+  background-image: url("../imagenes/fondonosotrasnuevo.jpg");
   background-position: center;
   background-size: cover;
   text-align: center;
   align-content: center;
 }
-.mainNosotras .containerPelu .pelu .pelutext {
+.mainNosotras section .containerPelu .pelu .pelutext {
   color: #f5f2f2;
   text-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
-.mainNosotras .containerPelu .pelu .textopelu {
+.mainNosotras section .containerPelu .pelu .textopelu {
   margin: 30px;
   font-optical-sizing: auto;
   font-weight: weight;
@@ -78,7 +81,7 @@ body .whatsapp-btn {
   text-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
 .mainNosotras .instagram {
-  background-color: #dacbb1;
+  background-color: rgb(223, 213, 213);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -99,8 +102,14 @@ body .whatsapp-btn {
   margin: 0 auto;
   margin-bottom: 10px;
 }
-.mainturnos .card {
+.mainturnos .row {
+  padding-bottom: 10px;
+}
+.mainturnos .row .card {
   margin-right: 10px;
+}
+.mainturnos .row .card p {
+  padding-bottom: 10px;
 }
 
 .maincontacto {
@@ -117,13 +126,21 @@ body .whatsapp-btn {
 }
 .maincontacto form {
   background-color: rgb(216, 216, 216);
+  padding: 20px;
   margin-top: 35px;
   width: 85vw;
+  margin-bottom: 30px;
+}
+.maincontacto form h2 {
+  font-family: "Cinzel", serif;
+  margin-bottom: 5px;
 }
 
 .mainUbi {
   background-color: rgb(216, 216, 216);
   margin-top: 5.5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   justify-content: center;
   display: grid;
   grid-template-columns: 2fr 2fr;
@@ -131,19 +148,29 @@ body .whatsapp-btn {
   grid-template-areas: "ubi1 ubi2" "ubi1 ubi3";
 }
 .mainUbi .ubi1 {
-  justify-self: center;
+  justify-self: stretch;
   grid-area: ubi1;
   margin-left: 2%;
+}
+.mainUbi .ubi1 .mapa1 {
+  padding: 10px;
+  width: 100%;
   height: 100%;
 }
-.mainUbi .ubi2 {
+.mainUbi section .ubi2 {
   grid-area: ubi2;
   align-self: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 .mainUbi .ubi3 {
   grid-area: ubi3;
-  align-self: center;
+  align-items: center;
+  justify-self: stretch;
+}
+.mainUbi .ubi3 .mapa2 {
+  width: 100%;
+  height: 100%;
+  padding: 10px 10px 10px 0px;
 }
 
 footer {
@@ -169,119 +196,6 @@ footer .iconfooter .logosfooter {
   margin-left: 20px;
 }
 
-@media screen and (max-width: 768px) {
-  footer {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  footer .logosfooter {
-    margin-left: 0;
-    margin-top: 10px;
-  }
-}
-@media (max-width: 768px) {
-  .containerNosotras {
-    margin-top: 10%;
-    justify-content: space-evenly;
-    flex-direction: column;
-  }
-  .instagram {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-  }
-}
-@media (max-width: 480px) {
-  .containerNosotras {
-    margin-top: 10%;
-    justify-content: space-evenly;
-    flex-direction: column;
-  }
-  .hsobre {
-    font-size: 1rem;
-  }
-  .textnos {
-    font-size: 1rem;
-  }
-  .instagram {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-  }
-}
-@media (max-width: 680px) {
-  .mainturnos .card {
-    width: 100%;
-    margin: 3%;
-    padding: 100px;
-  }
-  .txtturnos {
-    margin-top: 10%;
-  }
-}
-@media (max-width: 320px) {
-  .mainturnos .card {
-    width: 100%;
-    margin: 3%;
-    padding: 20%;
-  }
-  .txtturnos {
-    margin-top: 15%;
-  }
-}
-@media (max-width: 1024px) {
-  .maincontacto {
-    margin-top: 10%;
-  }
-}
-@media (max-width: 600px) {
-  .maincontacto {
-    margin-top: 18%;
-  }
-}
-@media (max-width: 320px) {
-  .maincontacto {
-    margin-top: 23%;
-  }
-}
-@media (max-width: 768px) {
-  .mainUbi {
-    padding: 15%;
-    width: 100%;
-    align-items: center;
-    margin-top: 10%;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "ubi1" "ubi2" "ubi3";
-  }
-  .ubi2 {
-    padding-left: 15%;
-    padding-right: 15%;
-  }
-}
-@media (max-width: 480px) {
-  .mainUbi {
-    justify-content: center;
-    margin: 30px;
-    width: 100%;
-    align-items: center;
-    margin-top: 10%;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1fr 0.5fr;
-    grid-template-areas: "ubi1" "ubi2" "ubi3";
-  }
-  .ubi1 {
-    margin: 10%;
-    padding: 5%;
-  }
-  .ubi2 {
-    padding: 5%;
-  }
-  .ubi3 {
-    justify-self: center;
-    align-self: start;
-  }
-}
 .maininicio {
   display: flex;
   flex-direction: column;
@@ -294,29 +208,63 @@ footer .iconfooter .logosfooter {
   height: 90vh;
   padding-top: 15%;
   text-align: center;
-  background-color: rgb(233, 233, 233);
+  background-color: #e9e9e9;
 }
 .maininicio .welcome-section h1 {
   font-size: 6rem;
+  animation-name: titulo;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+@keyframes titulo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .maininicio .welcome-section p {
   font-size: 2rem;
+  animation-name: parrafo;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
 }
-.maininicio .content-section {
+@keyframes parrafo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.maininicio section {
+  padding: 9px;
+}
+.maininicio section .content-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background-color: #f5f2f2;
+  background-color: #e9e9e9;
 }
-.maininicio .content-section p {
+.maininicio section .content-section p {
   width: 50%;
   padding: 20px;
   font-size: 1.5rem;
 }
-.maininicio .content-section img {
+.maininicio section .content-section img {
   width: 50%;
   height: auto;
+}
+.maininicio .div-title {
+  margin: 3%;
+}
+.maininicio .carousel {
+  margin: 10px;
+  padding: 3%;
+  width: 70%;
+  height: 40%;
 }
 .maininicio .textoinicio {
   width: 100%;
@@ -330,6 +278,127 @@ footer .iconfooter .logosfooter {
 }
 .maininicio .textoinicio p {
   font-weight: bold;
+}
+
+@media screen and (min-width: 320px) and (max-width: 700px) {
+  .maininicio .welcome-section {
+    margin-bottom: 0;
+  }
+  .maininicio .welcome-section h1 {
+    padding-top: 30%;
+    font-size: 4.5rem;
+  }
+  .maininicio .welcome-section p {
+    font-size: 1.5rem;
+  }
+  .maininicio section .content-section p {
+    font-size: 1rem;
+  }
+  .maininicio .div-title {
+    margin: 3%;
+  }
+  .maininicio .div-title h2 {
+    font-size: 1.5rem;
+  }
+  .maininicio .carousel {
+    margin: 10px;
+    padding: 1%;
+    width: 90%;
+  }
+  .maininicio .textoinicio {
+    height: 150px;
+  }
+  .maininicio .textoinicio p {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  footer {
+    flex-direction: column;
+    padding: 9%;
+  }
+  footer p {
+    padding: 5%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 700px) {
+  .mainNosotras section .containerNosotras {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mainNosotras section .containerNosotras .nosText .hsobre {
+    padding-top: 13%;
+    font-size: 1.4rem;
+  }
+  .mainNosotras section .containerNosotras .nosText .textnos {
+    width: 70vw;
+  }
+  .mainNosotras section .containerPelu .pelu .pelutext {
+    padding: 5%;
+  }
+  .mainNosotras .instagram {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 700px) {
+  .mainturnos .txtturnos .titleturnos {
+    padding-top: 15%;
+    letter-spacing: 2px;
+  }
+  .mainturnos .txtturnos p {
+    padding: 15px;
+    font-size: 1.2rem;
+  }
+  .mainturnos .row {
+    margin: 10px 10px 0px;
+  }
+  .mainturnos .row .card {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 700px) {
+  .maincontacto .divContacto {
+    padding-top: 15%;
+  }
+  .maincontacto .divContacto h1 {
+    font-size: 2rem;
+  }
+  .maincontacto .divContacto p {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 700px) {
+  .mainUbi {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    grid-template-areas: "ubi2" "ubi1" "ubi3";
+  }
+  .mainUbi .ubi1 {
+    height: 90%;
+    justify-content: center;
+  }
+  .mainUbi .ubi1 .mapa1 {
+    height: 95%;
+    padding: 15px;
+    width: 100%;
+    justify-items: center;
+  }
+  .mainUbi section .ubi2 {
+    margin-top: 15%;
+    padding: 10px;
+    grid-area: ubi2;
+    align-self: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  .mainUbi .ubi3 {
+    justify-content: center;
+  }
+  .mainUbi .ubi3 .mapa2 {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+  }
 }
 
 /*# sourceMappingURL=estilo.css.map */

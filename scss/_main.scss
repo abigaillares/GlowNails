@@ -1,6 +1,9 @@
 
 .mainNosotras{
     width: 100vw;
+
+
+    section{
     .containerNosotras{
         display: flex;
         justify-content: space-between;
@@ -10,7 +13,7 @@
         .nosText{
             margin: 30px;
             text-align: center;
-            width: 40vw;
+            
             .hsobre{
                 font-size: 2rem;
                 margin: 30px;   
@@ -25,7 +28,10 @@
         height: 300px;
         margin: 50px;  
         border-radius: 100%; 
+        padding-top: 8%;
     }
+    }
+    section{
     .containerPelu{  
         display: flex;
         justify-content: space-between;
@@ -34,7 +40,7 @@
         height: 500px;
         .pelu{
             height: 440px;
-            background-image: url("../imagenes/fondonosotras.JPEG");
+            background-image: url("../imagenes/fondonosotrasnuevo.jpg");
             background-position: center;
             background-size: cover;
             text-align: center;
@@ -53,8 +59,9 @@
               }
         }
     }
+    }
     .instagram{
-        background-color: #dacbb1;
+        background-color: rgb(223, 213, 213);
         display: flex;
         justify-content: space-evenly;
         align-items: center;  
@@ -75,8 +82,16 @@
             margin-bottom: 10px;
         }
     }
+    .row{
+        padding-bottom: 10px;
+
+    
     .card {
         margin-right: 10px; 
+        p{
+            padding-bottom: 10px;
+        }
+    }
     }
 }
 
@@ -93,14 +108,22 @@
     }
     form {
         background-color:  rgb(216, 216, 216);
+        padding: 20px;
         margin-top: 35px; 
         width: 85vw;
+        margin-bottom: 30px;
+        h2{
+            font-family: "Cinzel", serif;
+            margin-bottom: 5px;
+        }
     }
  
 }
 .mainUbi{
     background-color: rgb(216, 216, 216);
     margin-top: 5.5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     justify-content: center;
     display: grid;
     grid-template-columns: 2fr 2fr;
@@ -109,18 +132,31 @@
     "ubi1 ubi2"
     "ubi1 ubi3";
     .ubi1{
-        justify-self: center;
+        justify-self: stretch;
         grid-area: ubi1;
         margin-left: 2%;
-        height: 100%;
+        .mapa1{
+            padding: 10px;
+            width: 100%;
+            height: 100%;
+        }
     }
+    section{
     .ubi2{
         grid-area: ubi2;
         align-self: center;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     }
+    }
     .ubi3{
         grid-area: ubi3;
-        align-self: center;
+        align-items: center;
+        justify-self: stretch;
+        
+        .mapa2{
+            width: 100%;
+            height: 100%;
+            padding: 10px 10px 10px 0px;
+        }
     }
 }

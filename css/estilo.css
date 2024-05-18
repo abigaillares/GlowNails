@@ -25,6 +25,90 @@ body .whatsapp-btn {
   z-index: 999;
 }
 
+.maininicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.maininicio .welcome-section {
+  margin: 30px;
+  width: 100%;
+  height: 90vh;
+  padding-top: 15%;
+  text-align: center;
+  background-color: #e9e9e9;
+}
+.maininicio .welcome-section h1 {
+  font-size: 6rem;
+  animation-name: titulo;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+@keyframes titulo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.maininicio .welcome-section p {
+  font-size: 2rem;
+  animation-name: parrafo;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+@keyframes parrafo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.maininicio section {
+  padding: 9px;
+}
+.maininicio section .content-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #e9e9e9;
+}
+.maininicio section .content-section p {
+  width: 50%;
+  padding: 20px;
+  font-size: 1.5rem;
+}
+.maininicio section .content-section img {
+  width: 50%;
+  height: auto;
+}
+.maininicio .div-title {
+  margin: 3%;
+}
+.maininicio .carousel {
+  margin: 10px;
+  padding: 3%;
+  width: 70%;
+  height: 40%;
+}
+.maininicio .textoinicio {
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  background-color: lightgray;
+  padding-top: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.maininicio .textoinicio p {
+  font-weight: bold;
+}
+
 .mainNosotras {
   width: 100vw;
 }
@@ -194,90 +278,6 @@ footer .iconfooter .logosfooter {
   padding: 10px;
   width: 50px;
   margin-left: 20px;
-}
-
-.maininicio {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.maininicio .welcome-section {
-  margin: 30px;
-  width: 100%;
-  height: 90vh;
-  padding-top: 15%;
-  text-align: center;
-  background-color: #e9e9e9;
-}
-.maininicio .welcome-section h1 {
-  font-size: 6rem;
-  animation-name: titulo;
-  animation-duration: 3s;
-  animation-iteration-count: 1;
-}
-@keyframes titulo {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.maininicio .welcome-section p {
-  font-size: 2rem;
-  animation-name: parrafo;
-  animation-duration: 3s;
-  animation-iteration-count: 1;
-}
-@keyframes parrafo {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.maininicio section {
-  padding: 9px;
-}
-.maininicio section .content-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  background-color: #e9e9e9;
-}
-.maininicio section .content-section p {
-  width: 50%;
-  padding: 20px;
-  font-size: 1.5rem;
-}
-.maininicio section .content-section img {
-  width: 50%;
-  height: auto;
-}
-.maininicio .div-title {
-  margin: 3%;
-}
-.maininicio .carousel {
-  margin: 10px;
-  padding: 3%;
-  width: 70%;
-  height: 40%;
-}
-.maininicio .textoinicio {
-  width: 100%;
-  height: 300px;
-  text-align: center;
-  background-color: lightgray;
-  padding-top: 10%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-.maininicio .textoinicio p {
-  font-weight: bold;
 }
 
 @media screen and (min-width: 320px) and (max-width: 700px) {

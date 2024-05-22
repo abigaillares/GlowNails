@@ -74,6 +74,9 @@ $secondary-color:  #dfd5d5;
         padding: 3%;
         width: 70%;
         height: 40%;
+        .d-block{
+            width: 100%;
+        }
     }
     .textoinicio{
         width: 100%;
@@ -93,10 +96,12 @@ $secondary-color:  #dfd5d5;
 
 }
 .mainNosotras{
-    width: 100vw;
+    overflow-x: hidden;
+    
 
 
     section{
+    
     .containerNosotras{
         display: flex;
         justify-content: space-between;
@@ -125,6 +130,7 @@ $secondary-color:  #dfd5d5;
     }
     }
     section{
+        
     .containerPelu{  
         display: flex;
         justify-content: space-between;
@@ -133,6 +139,7 @@ $secondary-color:  #dfd5d5;
         height: 500px;
         .pelu{
             height: 440px;
+           
             background-image: url("../imagenes/fondonosotrasnuevo.jpg");
             background-position: center;
             background-size: cover;
@@ -162,6 +169,7 @@ $secondary-color:  #dfd5d5;
 }
 
 .mainturnos{
+    overflow-x: hidden;
     margin-top: 6%;
     background-color: $primary-color;
     .txtturnos {
